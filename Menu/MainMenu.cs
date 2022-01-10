@@ -29,11 +29,11 @@ namespace Hospital.Menu
                 string tanlov = ReadLine();
 
                 if (tanlov == "1")
-                {                  
-                MainMenu:
-                Start:               
+                {
+                    MainMenu:
+                    Start:               
                     Clear();
-                End:
+                End:                    
                     Show();
                     ForegroundColor = ConsoleColor.DarkGreen;
                     Write("Xona bant qilish_[1]\n" +
@@ -49,7 +49,7 @@ namespace Hospital.Menu
                     if (choise == "1")
                     {
                         #region Ro'yxatdan o'tish va Xona bant qilish
-                        Clear();
+                       
                         Show();
                         User user = new User();
 
@@ -77,18 +77,18 @@ namespace Hospital.Menu
                         #region Foydalanuvchini qidirish
                         Clear();
                         Show();
-                        WriteLine("Ism bilan qidirish_____[1]\n" +
-                                  "Sharif bilan qidirish__[2]\n" +
+                        WriteLine("Ism bilan qidirish_____[1]\n\n" +
+                                  "Sharif bilan qidirish__[2]\n\n" +
                                   "Tug'ilgan sana bilan___[3]\n\n" +
-                                  "Xona raqami bilan______[4]\n" +
-                                  "Bino manzili bilan_____[5]\n");
+                                  "Xona raqami bilan______[4]\n\n" +
+                                  "Bino manzili bilan_____[5]\n\n");
 
                         int searchchoise = int.Parse(ReadLine());
-                        Write("Enter the word : ");
+                        Write("So'z kiriting: ");
                         string word = ReadLine();
 
                         ICollection<User> result = Reception.SearchPerson(word, searchchoise);
-                        WriteLine("*****************************************************************************************************************************");
+                        WriteLine("***************************************************************************");
                         foreach (User person in result)
                         {
                             WriteLine($"Name :{person.FirstName}\n" +
@@ -100,7 +100,7 @@ namespace Hospital.Menu
                         }
 
                         WriteLine("\n");
-                        goto MainMenu;
+                        
                         #endregion
 
                     }
