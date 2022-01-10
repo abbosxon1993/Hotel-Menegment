@@ -30,9 +30,10 @@ namespace Hospital.Menu
 
                 if (tanlov == "1")
                 {
-                    MainMenu:
-                    Start:               
                     Clear();
+                MainMenu:
+                    Start:               
+                    
                 End:                    
                     Show();
                     ForegroundColor = ConsoleColor.DarkGreen;
@@ -120,9 +121,10 @@ namespace Hospital.Menu
                         Reception.DeletePerson(user);
                         Clear();
                         ForegroundColor = ConsoleColor.Magenta;
-                        WriteLine("Malumotlar o'chirildi!");
-                        
+                        WriteLine("\t\t\tMalumotlar o'chirildi!\n\n");
                         goto MainMenu;
+                        
+                        
                         #endregion
                     }
 

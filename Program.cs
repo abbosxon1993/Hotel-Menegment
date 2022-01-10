@@ -11,7 +11,6 @@ namespace Hospital
         {
             Console.ForegroundColor = ConsoleColor.Green;
             MainMenu.Menu();
-           
 
         }
     }
