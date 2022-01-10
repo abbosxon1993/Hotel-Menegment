@@ -181,7 +181,9 @@ namespace Hospital.Menu
             public static void Show() 
             {
             ForegroundColor = ConsoleColor.DarkGreen;
-            WriteLine("\t\t\tHotel Management\n");
+            Write(
+                    "█░█ █▀█ ▀█▀ █▀▀ █░░   █▀▄▀█ ▄▀█ █▄░█ ▄▀█ █▀▀ █▀▀ █▀▄▀█ █▀▀ █▄░█ ▀█▀\n"+
+                    "█▀█ █▄█ ░█░ ██▄ █▄▄   █░▀░█ █▀█ █░▀█ █▀█ █▄█ ██▄ █░▀░█ ██▄ █░▀█ ░█░\n\n");
         }
     }
 }
